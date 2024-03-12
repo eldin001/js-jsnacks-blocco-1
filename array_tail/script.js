@@ -14,6 +14,9 @@ let numberOfElements = parseInt(prompt("Quanti elementi vuoi inserire nell'array
 let numbersContainer = [];
 
 for(let i = 0; i < numberOfElements; i++) {
-    let rndNumber =  getRndInteger(1, 100)
+    let rndNumber =  getRndInteger(1, 100);
+    numbersContainer.push(rndNumber);
 
 }
+
+console.log(numbersContainer)
