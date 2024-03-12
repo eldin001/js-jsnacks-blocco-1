@@ -19,8 +19,7 @@ if(numberOfElementsToPrint > numberOfElements) {
     for(let i = 0; i < numberOfElements; i++) {
         let rndNumber =  getRndInteger(1, 100);
         numbersContainer.push(rndNumber);
-    }
-    
+    } 
     console.log(numbersContainer.slice(-numberOfElementsToPrint));
 }
 
