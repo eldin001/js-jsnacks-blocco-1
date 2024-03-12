@@ -6,4 +6,11 @@ let secondArray = [1, 2];
 
 let difference = firstArray.length - secondArray.length;
 
-console.log(difference);
+/* console.log(difference); */
+
+for(let i = 0; i < difference; i++) {
+    secondArray.push(i);
+}
+
+console.log(firstArray);
+console.log(secondArray);
