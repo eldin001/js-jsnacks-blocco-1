@@ -11,7 +11,16 @@ Fasi
 
 let frigo = ['banana', 'mela', 'pera', 'ciliegia', 'arancia', 'mandarino', 'cocomero', 'limone', 'fragola'];
 let tavolo = 'pesca';
-console.log(frigo);
+
 frigo.push(tavolo);
 
-console.log(frigo);
+let ingrediente = 'cocomero';
+let check = 'false'
+
+for(let i = 0; i < frigo.length; i++) {
+    if(ingrediente === frigo[i]) {
+        check = true;
+    }
+}
+
+console.log(check);
