@@ -14,7 +14,7 @@ let numberOfElementsToPrint = parseInt(prompt("Quanti elementi dell'array vuoi s
 let numbersContainer = [];
 
 if(numberOfElementsToPrint > numberOfElements) {
-    console.log('Errore');
+    console.log("Errore, non puoi stamapare più elementi di quelli contenuti nell'insieme.");
 } else {
     for(let i = 0; i < numberOfElements; i++) {
         let rndNumber =  getRndInteger(1, 100);
