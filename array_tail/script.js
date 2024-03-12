@@ -10,13 +10,19 @@ function getRndInteger(min, max) {
 }
 
 let numberOfElements = parseInt(prompt("Quanti elementi vuoi inserire nell'array?"))
-
+let numberOfElementsToPrint = parseInt(prompt("Quanti elementi dell'array vuoi stamapare?"));
 let numbersContainer = [];
 
-for(let i = 0; i < numberOfElements; i++) {
-    let rndNumber =  getRndInteger(1, 100);
-    numbersContainer.push(rndNumber);
-
+if(numberOfElementsToPrint > numberOfElements) {
+    console.log('Errore');
+} else {
+    for(let i = 0; i < numberOfElements; i++) {
+        let rndNumber =  getRndInteger(1, 100);
+        numbersContainer.push(rndNumber);
+    }
+    
+    console.log(numbersContainer.slice(-numberOfElementsToPrint));
 }
 
-console.log(numbersContainer)
+
+
