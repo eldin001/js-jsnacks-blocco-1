@@ -23,4 +23,11 @@ for(let i = 0; i < frigo.length; i++) {
     }
 }
 
-console.log(check);
+if(check) {
+    console.log("Trovato! Devo solo preparare il cocktail.");
+} else {
+    console.log("Oh no, devo uscire a comprare il cocomero!");
+}
+
+
+
